@@ -70,4 +70,4 @@ All data is stored **in memory only** (array in JavaScript). There is **no backe
    - Click **Delete** to remove an expense.
    - Watch the **total**, **highest**, and **chart** update automatically.
 
-No extra tools or servers are needed – it runs completely in the browser.
+
