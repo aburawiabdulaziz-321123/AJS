@@ -1,73 +1,61 @@
-# Expense Tracker – Mini Budget App
+Expense Tracker – Mini Budget App
 
-## Project Description
+Project Description
+This is a simple Expense Tracker made with HTML, CSS, and JavaScript. It lets you add, edit, delete, and view your daily expenses. You can also filter your expenses by category, sort them in different ways, and see a small bar chart that shows how much money you spent in each category.
+The project helps you practice basic JavaScript skills like arrays, objects, and updating the page with the DOM.
 
-This is a simple **Expense Tracker** built with **HTML, CSS, and JavaScript**.  
-It lets you add, edit, delete, and view your daily expenses in a clean table.  
-You can also filter by category, sort your expenses, and see a small chart that shows how much you spent in each category.
+Features
 
-The goal of this project is to practice core JavaScript skills like:
+Add a new expense with a title, amount, category, and date
 
-- Working with objects and arrays
-- Using `map`, `filter`, `find`, and `reduce`
-- DOM manipulation (updating the page with JavaScript)
-- Basic data visualization with the `<canvas>` element
+Title is required
 
----
+Amount must be a number greater than zero
 
-## Features
+Edit an existing expense
 
-- Add a new expense with:
-  - `title`
-  - `amount`
-  - `category`
-  - `date` (defaults to today if empty)
-- Validation:
-  - Title is required
-  - Amount must be a positive number
-- Delete an expense
-- Edit an existing expense (enter "edit mode" and then save changes)
-- Filter expenses by category (Food, Transport, Shopping, Bills, Other, or All)
-- Sort expenses:
-  - Date (Newest First)
-  - Date (Oldest First)
-  - Amount (High → Low)
-  - Amount (Low → High)
-- Show **total expenses** for the currently visible list
-- Show **highest expense** in the currently visible list
-- Uses array methods:
-  - `map`
-  - `filter`
-  - `find`
-  - `forEach`
-  - `reduce`
-- Uses the **spread operator** (`...`) and object **destructuring**
-- Simple bar chart (using `<canvas>`) that shows category totals (Food, Transport, Shopping, Bills, Other)
+Delete an expense
 
-All data is stored **in memory only** (array in JavaScript). There is **no backend** and no database.
+Filter expenses by category (Food, Transport, Shopping, Bills, Other, All)
 
----
+Sort expenses by newest, oldest, highest amount, or lowest amount
 
-## How to Run the Project
+Shows the total amount of expenses
 
-1. Make sure you have these three files in the same folder:
-   - `index.html`
-   - `style.css`
-   - `main.js`
+Shows the highest expense
 
-2. Open the folder on your computer.
+Uses JavaScript methods like map, filter, find, forEach, and reduce
 
-3. Double-click `index.html` to open it in your web browser  
-   (or right-click → “Open with” → choose Chrome/Edge/Firefox).
+Uses the spread operator and object destructuring
 
-4. You should now see the **Expense Tracker – Mini Budget App** page.
+Shows a simple bar chart of category totals using the canvas element
 
-5. Start using the app:
-   - Fill in the form at the top and click **Add** to create a new expense.
-   - Use the **Filter by category** dropdown to filter.
-   - Use the **Sort by** dropdown to change the order.
-   - Click **Edit** to modify an expense, then **Save**.
-   - Click **Delete** to remove an expense.
-   - Watch the **total**, **highest**, and **chart** update automatically.
+All data is stored in memory only (no backend or database)
 
+How to Run the Project
 
+Make sure these three files are in the same folder:
+
+index.html
+
+style.css
+
+main.js
+
+Open the folder on your computer.
+
+Double-click index.html to open it in your web browser.
+
+You will see the Expense Tracker page.
+
+You can now:
+
+Add a new expense
+
+Filter expenses
+
+Sort expenses
+
+Edit or delete an expense
+
+See the total, highest expense, and the chart update automatically
