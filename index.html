@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker – Mini Budget App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Expense Tracker – Mini Budget App</h1>
+
+  <form id="expense-form">
+    <input type="text" id="title" placeholder="Title *" />
+    <input type="number" id="amount" placeholder="Amount *" />
+    <select id="category">
+      <option value="Food">Food</option>
+      <option value="Transport">Transport</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Bills">Bills</option>
+      <option value="Other">Other</option>
+    </select>
+    <input type="date" id="date" />
+    <button type="submit" id="submit-btn">Add</button>
+  </form>
+
+  <button id="cancel-edit-btn" style="display:none; margin-bottom:10px;">
+    Cancel Edit
+  </button>
+
+  <div class="filter-bar">
+    <label for="filter-category">Filter by category:</label>
+    <select id="filter-category">
+      <option value="All">All</option>
+      <option value="Food">Food</option>
+      <option value="Transport">Transport</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Bills">Bills</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="sort-by">Sort by:</label>
+    <select id="sort-by">
+      <option value="none">None</option>
+      <option value="date-newest">Date (Newest First)</option>
+      <option value="date-oldest">Date (Oldest First)</option>
+      <option value="amount-high">Amount (High → Low)</option>
+      <option value="amount-low">Amount (Low → High)</option>
+    </select>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="expense-tbody"></tbody>
+  </table>
+
+  <div class="summary">
+    <span id="total-expense">Total: $0.00</span>
+    <span id="highest-expense">Highest: $0.00</span>
+  </div>
+
+  <div id="chart-container">
+    <strong>Category Totals</strong><br />
+    <canvas id="chart" width="600" height="220"></canvas>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
