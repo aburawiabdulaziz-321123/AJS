@@ -1,61 +1,47 @@
-Expense Tracker – Mini Budget App
+# Expense Tracker – Mini Budget App
 
-Project Description
-This is a simple Expense Tracker made with HTML, CSS, and JavaScript. It lets you add, edit, delete, and view your daily expenses. You can also filter your expenses by category, sort them in different ways, and see a small bar chart that shows how much money you spent in each category.
-The project helps you practice basic JavaScript skills like arrays, objects, and updating the page with the DOM.
+This is a simple Expense Tracker built with **HTML**, **CSS**, and **JavaScript**.  
+It lets you add, edit, delete, filter, and sort expenses, and shows totals plus a simple chart of spending.
 
-Features
+## Features
 
-Add a new expense with a title, amount, category, and date
+- Add a new expense with:
+  - Title
+  - Amount
+  - Category (Food, Transport, Shopping, Bills, Other)
+  - Date (defaults to today if empty)
+- Edit an existing expense  
+- Delete an expense  
+- Filter expenses by category  
+- Sort expenses by:
+  - Date (Newest First)
+  - Date (Oldest First)
+  - Amount (High → Low)
+  - Amount (Low → High)
+- Shows:
+  - Total expenses
+  - Highest expense
+- Uses JavaScript array methods:
+  - map
+  - filter
+  - reduce
+  - find
+  - forEach
+- Uses object destructuring and the spread operator  
+- Simple bar chart using `<canvas>` for category totals  
+- All data is stored in memory (no database or backend)
 
-Title is required
+## How to Run
 
-Amount must be a number greater than zero
+1. Make sure these three files are in the same folder:
+   - `index.html`
+   - `style.css`
+   - `main.js`
 
-Edit an existing expense
+2. Open the folder on your computer.
 
-Delete an expense
+3. Double-click **index.html** (or open it with Chrome/Edge/Firefox).
 
-Filter expenses by category (Food, Transport, Shopping, Bills, Other, All)
+4. The app will load in your browser — no server needed.
 
-Sort expenses by newest, oldest, highest amount, or lowest amount
-
-Shows the total amount of expenses
-
-Shows the highest expense
-
-Uses JavaScript methods like map, filter, find, forEach, and reduce
-
-Uses the spread operator and object destructuring
-
-Shows a simple bar chart of category totals using the canvas element
-
-All data is stored in memory only (no backend or database)
-
-How to Run the Project
-
-Make sure these three files are in the same folder:
-
-index.html
-
-style.css
-
-main.js
-
-Open the folder on your computer.
-
-Double-click index.html to open it in your web browser.
-
-You will see the Expense Tracker page.
-
-You can now:
-
-Add a new expense
-
-Filter expenses
-
-Sort expenses
-
-Edit or delete an expense
-
-See the total, highest expense, and the chart update automatically
+5. Start adding expenses and use the filters, sorting, edit, delete, and chart features.
